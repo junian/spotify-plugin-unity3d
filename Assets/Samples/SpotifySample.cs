@@ -22,6 +22,6 @@ public class SpotifySample : MonoBehaviour {
 
     public void AuthSpotify()
     {
-        UnityEngine.Debug.Log(SpotifyPlayer.Instance.Init("coba command"));
+        SpotifyPlayer.Instance.Init("28be5cf85d6143c58992a73644921bba", "spotifyforunity-login://callback");
     }
 }

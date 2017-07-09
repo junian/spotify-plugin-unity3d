@@ -14,4 +14,7 @@
 
 @interface JTSpotifyPlayer : NSObject <SPTAudioStreamingDelegate>
 
++ (id)instance;
+- (void)handleURL:(NSURL*) url;
+
 @end

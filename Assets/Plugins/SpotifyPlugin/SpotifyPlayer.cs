@@ -315,23 +315,21 @@ namespace Net.Junian.UniPlugins
 #if UNITY_IOS
 
         [DllImport("__Internal")]
-        private static extern IntPtr _Init(string command);
+        private static extern void _Init(string clientID, string callbackUrl);
 #endif
 
-        public string Init(string command)
+        public void Init(string clientID, string callbackUrl)
         {
 #if UNITY_IOS
             try
             {
-                var result = Marshal.PtrToStringAuto(SpotifyPlayer._Init(command));
-                return result;
+                SpotifyPlayer._Init(clientID, callbackUrl);
             }
             catch (Exception ex)
             {
                 UnityEngine.Debug.LogError(ex);
             }
 #endif
-            return string.Empty;
         }
 
     }
