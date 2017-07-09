@@ -19,4 +19,9 @@ public class SpotifySample : MonoBehaviour {
     {
         SpotifyPlayer.Instance.Play("spotify:track:5uJgz2iuvfePb9RFJYy4pu");
     }
+
+    public void AuthSpotify()
+    {
+        UnityEngine.Debug.Log(SpotifyPlayer.Instance.Init("coba command"));
+    }
 }
