@@ -136,7 +136,8 @@ PlayerSettings:
       depthFormat: 1
   protectGraphicsMemory: 0
   useHDRDisplay: 0
-  applicationIdentifier: {}
+  applicationIdentifier:
+    iOS: net.junian.spotifyforunity3d
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -155,8 +156,8 @@ PlayerSettings:
   VertexChannelCompressionMask:
     serializedVersion: 2
     m_Bits: 238
-  iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iPhoneSdkVersion: 989
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 
@@ -199,7 +200,8 @@ PlayerSettings:
   iOSLaunchScreeniPadSize: 100
   iOSLaunchScreeniPadCustomXibPath: 
   iOSDeviceRequirements: []
-  iOSURLSchemes: []
+  iOSURLSchemes:
+  - spotifyforunity3d-login://callback
   iOSBackgroundModes: 0
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 0
